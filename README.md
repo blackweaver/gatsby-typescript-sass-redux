@@ -1,99 +1,148 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# Gatsby + Redux
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Repositorio:
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+```
+npm install
+gatsby develop -p 8000
+```
 
-## 🚀 Quick start
+# Gatsby
 
-1.  **Create a Gatsby site.**
+Framework libre que genera contenido estático. PWA (Progressive Web App) basado en React que nos ayuda a desarrollar sitios ágilmente. Sólo HTML, CSS, datos y Javascript crítico para que el sitio cargue lo más rápido posible. No genera contenido durante tiempo de ejecución, sino durante tiempo de construcción. Una vez cargado, react se hace cargo.
+Crea una estructura básica por defecto y provee plugins con todo tipo de herramientas. También podemos crear nuestros propios plugins.
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+* Velocidad
+* Optimización para los motores de búsqueda.
+* Seguridad
+* GraphQL
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+Comparativa con otros CMS: https://www.gatsbyjs.org/features/cms/
 
-1.  **Start developing.**
+### GraphQL: 
 
-    Navigate into your new site’s directory and start it up.
+Lenguaje de consultas, permite comunicar clientes y servidores. Evita múltiples consultas al servidor.
+Nos permite desarrollar una API de forma rápida, natural e independiente del acceso a base de datos o en algunos casos
+conectarnos a un CMS. Soporta gran cantidad e lenguajes y clientes.
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+http://localhost:8000/___graphql
 
-1.  **Open the source code and start editing!**
+**CMSs**
+Contentful, Drupal, WordPress, etc.
 
-    Your site is now running at `http://localhost:8000`!
+**Markdown**
+Documentation, Posts, etc.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+**Data**
+APIs, Databases, YAML, JSON, CSV, etc.
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🧐 What's inside?
+### Instalar interfaz de línea de comandos
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+```
+npm install -g gatsby-cli
+```
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+### Instalar interfaz de línea de comandos
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+```
+gatsby new gatsby-site
+```
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+### Iniciar el servidor de desarrollo
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+```
+gatsby develop
+```
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+Por defecto: http://localhost:8000
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+```
+gatsby develop -p 8001
+```
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+## Crear aplicación en producción
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+```
+gatsby build
+```
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+### Servir app en producción
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+```
+gatsby serve
+```
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+### Sass + Typescript
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+```
+npm install -s gatsby-plugin-typescript
+plugins: [`gatsby-plugin-typescript`] (gatsby-config.js)
+```
+```
+npm install -s node-sass gatsby-plugin-sass
+plugins: [`gatsby-plugin-sass`] (gatsby-config.js)
+```
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+## Redux
 
-## 🎓 Learning Gatsby
+Framework que permite escribir aplicaciones con un manejo global del estado en distinos ambientes (cliente, servidor, nativo).
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+* Previcible
+Ejecución en diferentes entornos (cliente, servidor y nativo) y fáciles de probar.
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+* Centralizado
+Centralizar el estado y la lógica de su aplicación permite deshacer, rehacer y persistir de estado.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+* Debuggable
+Fácil rastrear cuándo, dónde, por qué y cómo cambió el estado de una aplicación. Envía informes completos de errores a un servidor.
 
-## 💫 Deploy
+* Flexible
+Redux funciona con cualquier capa de interfaz de usuario y tiene un gran ecosistema de complementos.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+El estado de toda tu aplicación se almacena en un árbol de objetos dentro de una única store.
+La única forma de cambiar el estado es emitir una acción, un objeto que describe lo que sucedió.
+Para especificar cómo las acciones transforman el árbol de estado, escribimos reducers.
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+### Instalo core de redux (independiente de react, se puedo usar con javascript plano, angular, etc)
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+```
+npm install -s redux
+```
+
+### Librería para vincular redux con react
+
+```
+npm install --save react-redux
+```
+
+### Extensión para monitorear la store en Chrome 
+
+Redux dev tools: 
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=es
+
+Herramienta para debuggin de redux. Podremos ver las modificaciones del estado.
+
+```
+npm install -s redux-devtools-extension
+
+import { composeWithDevTools } from 'redux-devtools-extension'
+const store = createStore(reducers, composeWithDevTools());
+o
+window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+en lugar de:
+composeWithDevTools()
+```
+
+### Creando la Store
+
+/store
+---- actions.tsx
+---- reducers.tsx
+---- ReduxWrapper.tsx
+
+* Asigno el wrapper del store como contenedor de Gatsby (gatsby-browser.js y gatsby-ssr.js)
+
+```
+export { default as wrapRootElement } from "./src/store/ReduxWrapper"
+```
