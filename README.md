@@ -36,6 +36,37 @@ Documentation, Posts, etc.
 **Data**
 APIs, Databases, YAML, JSON, CSV, etc.
 
+#### Cargando un archivo markdown con GraphQL
+
+```
+npm install --save gatsby-source-filesystem (leer archivos externos)
+
+plugins: [
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `markdown-pages`,
+      path: `${__dirname}/src/markdown-pages`,
+    },
+  },
+]
+```
+
+```
+npm install --save gatsby-transformer-remark (formatea un markdown como HTML)
+
+plugins: [
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/src/markdown-pages`,
+      name: `markdown-pages`,
+    },
+  },
+  `gatsby-transformer-remark`,
+]
+```
+
 
 ### Instalar interfaz de línea de comandos
 
@@ -83,6 +114,7 @@ plugins: [`gatsby-plugin-typescript`] (gatsby-config.js)
 npm install -s node-sass gatsby-plugin-sass
 plugins: [`gatsby-plugin-sass`] (gatsby-config.js)
 ```
+
 
 ## Redux
 

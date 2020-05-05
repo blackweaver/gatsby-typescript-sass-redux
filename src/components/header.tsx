@@ -33,9 +33,9 @@ const Header = ({ siteTitle, state }) => (
     <div>Items: { state.counter }</div>
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About us</Link></li>
-        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/" activeClassName="active">Home</Link></li>
+        <li><Link to="/about" activeClassName="active">About us</Link></li>
+        <li><Link to="/services" activeClassName="active">Services</Link></li>
       </ul>
     </nav>
   </header>

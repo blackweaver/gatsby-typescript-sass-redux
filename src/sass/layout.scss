@@ -644,6 +644,10 @@ nav {
         display: inline-block;
         color: white;
         padding: 30px;
+
+        &.active {
+          font-weight: 700;
+        }
       }
     }
   }

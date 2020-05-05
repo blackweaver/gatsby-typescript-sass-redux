@@ -26,9 +26,6 @@ const Layout = ({ children, state, dispatch }) => {
         <button
           onClick={() => dispatch(toggleDarkMode(!state.isDarkMode))}
         >Dark Mode {state.isDarkMode ? 'on' : 'off'}</button>
-        <footer>
-          © {new Date().getFullYear()}, Built with {` `} (<a href="https://www.gatsbyjs.org">Gatsby</a> + <a href="https://redux.js.org/">Redux</a>) & <a href="https://www.ricardocastillo.com">el gorrión</a>
-        </footer>
       </div>
     </div>
   )
