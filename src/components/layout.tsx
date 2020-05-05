@@ -12,7 +12,7 @@ const Layout = ({ children, state, dispatch }) => {
 
   return (
     <div className="wrapper"
-      style={state.isDarkMode ? { background: 'black', color: 'white' } : null}
+      style={state.isDarkMode ? { background: '#A65A49', color: '#F2CBBD' } : null}
     >
       <Header siteTitle="Gatsby + Redux" />
       <div
