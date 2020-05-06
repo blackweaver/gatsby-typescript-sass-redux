@@ -5,6 +5,7 @@ import React from "react"
 // Redux
 import { connect } from 'react-redux';
 
+// Los componentes de función capturan los valores renderizados, no tienen estado ni ciclos de vida
 const Header = ({ siteTitle, state }) => (
   <header>
     <div
