@@ -1,8 +1,8 @@
 # Gatsby + Redux
 
-Estructura base para escalar sitios de gran embergadura. 
-Creado a partir de Gatsby con incursiones de React nativo. 
-Store en Redux con dos acciones (Dark mode + Counter).
+Estructura base de React para escalar sitios de gran embergadura. 
+Creado a partir de Gatsby. 
+Store base en Redux con dos simples acciones (Dark mode + Counter).
 
 Repositorio:
 ```
