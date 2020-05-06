@@ -8,13 +8,13 @@ Repositorio:
 ```
 git@github.com:blackweaver/gatsby-typescript-sass-redux.git
 ```
-
 ```
 npm install
 gatsby develop -p 8000
 ```
 
-
+Sitio en producción:
+https://gatsby-redux.netlify.app
 
 # Gatsby
 
