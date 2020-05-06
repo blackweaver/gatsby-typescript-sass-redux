@@ -45,8 +45,8 @@ const Home = ({data, state, dispatch}) => {
       <SEO title="Home" />
         <h1 className={ styles.h1 }>Home</h1>
         <article>
-          { data.allMarkdownRemark.edges.map(({node}) => (
-            <section style={{ marginBottom: '40px'}}>
+          { data.allMarkdownRemark.edges.map(({node}, index) => (
+            <section style={{ marginBottom: '40px'}} key={ index }>
               <h2>{ node.frontmatter.title }</h2>
               <p>{ node.frontmatter.date }</p>
               { node.excerpt }
