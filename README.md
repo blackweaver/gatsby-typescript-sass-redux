@@ -170,10 +170,10 @@ composeWithDevTools()
 
 ### Creando la Store
 
-/store
----- actions.tsx
----- reducers.tsx
----- ReduxWrapper.tsx
+/store. 
+---- actions.tsx. 
+---- reducers.tsx. 
+---- ReduxWrapper.tsx. 
 
 * Asigno el wrapper del store como contenedor de Gatsby (gatsby-browser.js y gatsby-ssr.js)
 
