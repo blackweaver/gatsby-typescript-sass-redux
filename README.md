@@ -1,11 +1,20 @@
 # Gatsby + Redux
 
+Estructura base para escalar sitios de gran embergadura. 
+Creado a partir de Gatsby con incursiones de React nativo. 
+Store en Redux con dos acciones (Dark mode + Counter).
+
 Repositorio:
+```
+git@github.com:blackweaver/gatsby-typescript-sass-redux.git
+```
 
 ```
 npm install
 gatsby develop -p 8000
 ```
+
+
 
 # Gatsby
 
@@ -116,7 +125,7 @@ plugins: [`gatsby-plugin-sass`] (gatsby-config.js)
 ```
 
 
-## Redux
+# Redux
 
 Framework que permite escribir aplicaciones con un manejo global del estado en distinos ambientes (cliente, servidor, nativo).
 
