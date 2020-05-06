@@ -65,13 +65,6 @@ plugins: [
 npm install --save gatsby-transformer-remark (formatea un markdown como HTML)
 
 plugins: [
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      path: `${__dirname}/src/markdown-pages`,
-      name: `markdown-pages`,
-    },
-  },
   `gatsby-transformer-remark`,
 ]
 ```
