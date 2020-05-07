@@ -20,11 +20,15 @@ https://gatsby-redux.netlify.app
 
 Cadena de herramientas de React, libre, que genera contenido estático.
 
+### ¿Qué es una cadena de herramientas?
+
 * Escalar a múltiples archivos y componentes.
 * Usar bibliotecas de terceros desde npm.
 * Detección temprana de errores comunes.
 * Edición en vivo de CSS y JS en desarrollo.
 * Optimización de la salida para producción.
+
+### Características de Gatsby
 
 PWA (Progressive Web App) basado en React que nos ayuda a desarrollar sitios ágilmente. Sólo HTML, CSS, datos y Javascript crítico para que el sitio cargue lo más rápido posible. No genera contenido durante tiempo de ejecución, sino durante tiempo de construcción. Una vez cargado, react se hace cargo.
 Crea una estructura básica por defecto y provee plugins con todo tipo de herramientas. También podemos crear nuestros propios plugins.
