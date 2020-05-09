@@ -196,5 +196,3 @@ composeWithDevTools()
 ```
 export { default as wrapRootElement } from "./src/store/ReduxWrapper"
 ```
-
-# Gatsby + Contentful (próximamente)
